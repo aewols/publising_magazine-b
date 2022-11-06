@@ -1,0 +1,104 @@
+/* Footer ----------------------------------------------->>>>> */
+
+footer{
+	position: relative;
+	width: 100%;
+	background: #000;
+	padding: 15% 0;
+	box-sizing: border-box;
+}
+
+/*///// 푸터 팔로우 */
+
+.foot_follow{
+	position: relative;
+	width: 100%;
+	height: 22px;
+}
+.foot_follow{
+	position: absolute;
+	width: 204px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.foot_follow li{
+	float: left;
+	width: 22px;
+	height: 22px;
+	margin: 0 6px;
+	filter: invert(100%);
+}
+
+.f1{background: url(../image/instagram_icon.png) no-repeat center center;background-size: cover;}
+.f2{background: url(../image/facebook_icon.png) no-repeat center center;background-size: cover;}
+.f3{background: url(../image/twitter_icon.png) no-repeat center center;background-size: cover;}
+.f4{background: url(../image/youtube_icon.png) no-repeat center center;background-size: cover;}
+.f5{background: url(../image/vimeo_icon.png) no-repeat center center;background-size: cover;}
+.f6{background: url(../image/itunes_icon.png) no-repeat center center;background-size: cover;}
+
+
+/*///// 푸터 뉴스레터 */
+
+.foot_newsletter{
+	width: 80%;
+	height: 45px;
+	margin: 16% auto 0;
+	border: 1px solid #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	box-sizing: border-box;
+}
+.foot_newsletter li{
+	float: left;
+	width: 50%;
+	font-size: 13px;
+	font-size: 0.813rem;
+	color: #000;
+	box-sizing: border-box;
+	line-height: 43px;
+	text-align: center;
+	background: #fff;
+}
+.foot_newsletter li:first-child{
+	color: #fff;
+	background: none;
+	border-right: 1px solid #fff;
+}
+
+/*///// 푸터 Copyright */
+
+.footCopy{
+	text-align: center;
+	margin: 10% 0;
+}
+.footCopy p{
+	color: #fff;
+	font-size: 11px;
+	font-size: 0.688rem;
+	line-height: 20px;
+	margin-top: 10px;
+}
+
+/*///// 푸터유틸메뉴 */
+
+.footMenu{
+	width: 90%;
+	height: 40px;
+	text-align: center;
+	margin: 0 auto;
+	border: solid #fff;
+	border-width: 1px 0;
+}
+.footMenu ul{
+	display: inline-block;
+}
+.footMenu ul li{
+	float: left;
+	padding: 0 8px;
+}
+.footMenu ul li a{
+	color: #fff;
+	font-size: 11px;
+	font-size: 0.688rem;
+	line-height: 40px;
+}

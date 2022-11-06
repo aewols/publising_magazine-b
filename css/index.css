@@ -1,0 +1,150 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+html{font-size:100%;} /*16px 기본*/
+
+/* 안드로이드는 정상적으로 되는데,
+IOS에서 글자크기가 자동으로 기본크기로 변경하는 기능을 해제하기 위해 사용함.
+->webkit 기본의 브라우저에서 텍스트 사이즈가 둘쑥날쑥 하지 않게 조절함.
+ */
+body{-webkit-text-size-adjust:100%;}
+
+/* 아이폰에서 폼태그 버튼 모양 다르게 나올때*/
+input{
+	apperance: none;
+	-webkit-apperance: none;
+} 
+#wrap{
+    width: 100%;
+    height: 100%;
+    background: #edecee;
+}
+
+
+
+/* Section ---------------------------------------------->>>>> */
+
+section{
+	overflow: hidden; 
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+/* =========== swiper1 ============== */
+
+.gallery1 { /* 갤러리 전체영역 설정 */
+	overflow: hidden; 
+	position: relative; 
+	margin: 0 auto; 
+	width: 100%; 
+	height: 30vh;
+    margin-top: 60px;
+} 
+.gallery1>.swiper-wrapper>.swiper-slide>img{  /*가변이미지*/
+	width: 100%; 
+	max-width: 100%;
+    border-bottom: 1px solid #000;
+    box-sizing: border-box;
+}
+
+/* =========== swiper2 ============== */
+
+.gallery2 { /* 갤러리 전체영역 설정 */
+	position: relative; 
+    top: -23vh;
+    left: 28%;
+	width: 72%;
+    height: auto;
+    z-index: 800;
+} 
+.gallery2:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+}
+.gallery2>.swiper-wrapper>.swiper-slide>img{  /*가변이미지*/
+	width: 100%; 
+	max-width: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.gallery2>.swiper-wrapper>.swiper-slide .swiper_text{
+    width: 100%;
+    height: 28%;
+    background: #fff;
+    padding-top: 6%;
+    box-sizing: border-box;
+    border: solid #000;
+    border-width: 0 1px 1px 1px;
+}
+.gallery2>.swiper-wrapper>.swiper-slide .swiper_text li:first-child{
+    font-size: 14px;
+    font-size: 0.875rem;
+    color: #666;
+    padding: 0 5%;
+}
+.gallery2>.swiper-wrapper>.swiper-slide .swiper_text li:nth-child(2){
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 0.5px;
+    margin-top: 2%;
+    padding: 0 5%;
+}
+.gallery2>.swiper-wrapper>.swiper-slide .swiper_text li:nth-child(3){
+    font-size: 15px;
+    font-size: 0.938rem;
+    color: #999;
+    margin-top: 10%;
+    letter-spacing: 0.5px;
+    text-align: right;
+    text-decoration: underline;
+    padding: 0 5%;
+}
+.gallery2>.swiper-wrapper>.swiper-slide .swiper_text li.ss_line{
+    width: 100%;
+    height: 4px;
+    border-top: 1px solid #000;
+    margin-top: 5%;
+}
+
+.gallery2 .swiper-wrapper .ss1_line{background: #4c6e89;}
+.gallery2 .swiper-wrapper .ss2_line{background: #651215;}
+.gallery2 .swiper-wrapper .ss3_line{background: #7e6717;}
+.gallery2 .swiper-wrapper .ss4_line{background: #9c662f;}
+.gallery2 .swiper-wrapper .ss5_line{background: #c22b6e;}
+
+/* 하단버튼 */
+.gallery2>.nav2{ 
+	position: absolute; 
+	left: -32%; 
+	bottom: 28%; 
+	text-align: center;  
+	z-index: 10; 
+    
+} 
+.gallery2>.nav2>.swiper-pagination-bullet{ /* 버튼모양설정 */
+    display: block;
+	width: 50px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 32px;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #000;
+    opacity: 0.3;
+    margin-bottom: 8%;
+    border-bottom: 1px solid #000;
+    border-radius: 0;
+    background: none;
+} 
+.gallery2>.nav2>.swiper-pagination-bullet-active{  /* 메뉴on 설정(현재위치활성화) */
+	opacity: 1;
+    border: 1px solid #000;
+    border-radius: 50%;
+} 

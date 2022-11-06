@@ -1,0 +1,204 @@
+/* Header ---------------------------------------------->>>>> */
+
+header{
+	width: 100%;
+	height: 60px;
+	background: #fff;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	border-bottom: 1px solid #000;
+}
+
+
+/* ====== Header 1행 ====== */
+
+.nav_top{
+	position: relative;
+	width: 100%;
+	height: 100%;
+} 
+
+/* /////// 탑왼쪽-메뉴로고 */
+.nav_top .top_left{
+	position: absolute;
+	top: 20px;
+	left: 20px;
+}
+.nav_top .top_left a img{height: 20px;}
+
+/* /////// 탑가운데 로고 */
+.nav_top h2{
+	text-align: center;
+	padding-top: 15px;
+}
+.nav_top h2 img{width: 30px;}
+
+
+/* /////// 탑오른쪽-장바구니 */
+.nav_top .top_right{
+	position: absolute;
+	top: 17.5px;
+	right: 20px;
+}
+.nav_top .top_right a img{height: 25px;}
+
+
+/* ====== 모바일메뉴 ====== */
+
+.gnb{	
+	position: fixed; 
+	left: 0px; 
+	top: 0px;
+	z-index: 2000; 
+	width: 100%; /*제이쿼리에서 움직이는 거리*/
+	height: 100%;
+	background: #edecee;
+}
+
+/* /////// 모바일메뉴-top */
+.gnb_top{
+	width: 95%;
+	height: 10vh;
+	margin: 0 auto;
+	padding: 18px 5px 0;
+	box-sizing: border-box;
+	border-bottom: 1px solid #000;
+}
+.gnb_top div.close{  /*닫기버튼*/
+	float: left;
+	cursor: pointer;
+}
+.gnb_top div.close img{height: 30px;}
+
+.gnb_top .search_bar{   /*검색버튼*/
+	position: relative;
+	float: right;
+	width: 190px;
+	height: 30px;
+	transition: all 0.4s;
+}
+.gnb_top .search_bar input{
+	float: left;
+	width: 0px;
+	height: 30px;
+	font-size: 15px;
+	font-size: 0.938rem;
+	border: none;
+	border-bottom: 1px solid #000;
+	text-indent: 8px;
+	background: #fff;
+	opacity: 0;
+	box-sizing: border-box;
+	transition: all 0.4s;
+}
+.gnb_top .search_bar input:focus{outline: none;}
+
+.gnb_top .search_bar button{
+	float: right;
+	width: 30px;
+	height: 30px;
+	background: transparent;
+	border: none;
+	transition: all 0.4s;
+	padding: 0;
+	margin-top: 0px;
+	cursor: pointer;
+}
+.gnb_top .search_bar button img{height: 100%;}
+
+/* /////// 모바일메뉴-list */
+.gnb .gnb_list{
+	width: 95%;
+	margin: 0 auto;
+}
+.gnb .gnb_list>li{
+	height: 60px;
+	padding: 0 3%;
+	margin-left: -100%;
+	border-bottom: 1px solid #000;
+}
+.gnb .gnb_list>li>a{
+	line-height: 60px;
+	color: #000;
+	font-size: 24px;
+	font-size: 1.500rem;
+	font-weight: bold;
+}
+/* .gnb .gnb_list>li:hover{background: #000;}
+.gnb .gnb_list>li:hover a{color: #fff;} */
+
+.gnb .gnb_list>li>ul{display: none;}  /* 서브메뉴 숨김 */
+.gnb .gnb_list>li>ul>li{height: 35px;}
+.gnb .gnb_list>li>ul>li span{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50px;
+	background: #000;
+	margin: 0 15px 0 30px;
+}
+.gnb .gnb_list>li>ul>li>a{  /* 서브메뉴 */
+	display: inline-block;
+	font-size: 18px;
+	font-size: 1.125rem;
+	color: #000;
+	padding: 0 10px;
+line-height: 35px;
+}
+.gnb .gnb_list>li>ul>li>a:hover{border: 1px solid #000;}  /* 서브메뉴 over */
+
+/* /////// 모바일메뉴-bottom */
+.gnb_bottom{
+	width: 95%;
+	height: 90px;
+	margin: 35% auto 0;
+	padding: 0 2%;
+	box-sizing: border-box;
+}
+.gnb_bottom_left{
+	position: relative;
+	float: left;
+	width: 40%;
+	height: 100%;
+}
+.gnb_bottom_left ul{
+	position: absolute;
+	bottom: 5px;
+}
+.gnb_bottom_left ul li{
+	float: left;
+	padding: 0 6px;
+}
+.gnb_bottom_left ul li a{
+	font-size: 16px;
+	font-size: 1rem;
+	color: #666;
+}
+.gnb_bottom_left ul li:first-child{border-right: 1px solid #666;}
+.gnb_bottom_left ul li .lactive{
+	font-weight: bold;
+	text-decoration: underline;
+}
+/* .gnb_bottom_left ul li:hover{
+	font-weight: bold;
+	text-decoration: underline;
+} */
+
+.gnb_bottom_right{
+	float: right;
+	width: 60%;
+	text-align: right;
+}
+.gnb_bottom_right li{height: 30px;}
+.gnb_bottom_right li a{
+	line-height: 30px;
+	font-size: 16px;
+	font-size: 1rem;
+	color: #333;
+}
+.gnb_bottom_right li a:hover{
+	font-weight: bold;
+	text-decoration: underline;
+}

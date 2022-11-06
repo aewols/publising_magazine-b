@@ -1,0 +1,934 @@
+@import url(common.css);
+@import url(header.css);
+@import url(footer.css);
+
+@import url('https://fonts.googleapis.com/css2?family=Montagu+Slab:wght@200;300;400;500;600;700&family=Press+Start+2P&family=Special+Elite&display=swap');
+
+/* font-family: 'Montagu Slab', serif;
+font-family: 'Press Start 2P', cursive;
+font-family: 'Special Elite', cursive; */
+
+
+/* #txt1{position: fixed;top: 10px;right: 10px;z-index: 2000;}  스크롤바 위치확인 */
+
+html{font-size: 100%;} /*16px 기본*/
+
+/* 안드로이드는 정상적으로 되는데,
+IOS에서 글자크기가 자동으로 기본크기로 변경하는 기능을 해제하기 위해 사용함.
+->webkit 기본의 브라우저에서 텍스트 사이즈가 둘쑥날쑥 하지 않게 조절함.
+ */
+body{-webkit-text-size-adjust: 100%;}
+
+/* 아이폰에서 폼태그 버튼 모양 다른게 나올때*/
+input{
+	apperance: none;
+	-webkit-apperance: none;
+} 
+
+section{
+	width: 100%;
+	margin-top: 60px;
+}
+
+
+/* 모든 서브페이지 제목 */
+
+.sub_title{
+	position: relative;
+	z-index: 500;
+	width: 100%;
+	font-size: 58px;
+	font-size: 3.625rem;
+	letter-spacing: 2px;
+	padding: 0 6%;
+	box-sizing: border-box;
+}
+.sub_title h3{
+	font-weight: 700;
+	margin-left: -100%;
+}
+
+
+
+
+/* SUB1_about_us ----------------------------------------->>>>> */
+
+.au_title{
+	height: 95px;
+	line-height: 48px;
+	background: #edecee;
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+}
+.au_title h3:nth-child(2){
+	float: left;
+	width: 50%;
+	margin-left: -200%;
+}
+.au_title h3:last-child{
+	float: right;
+	width: 50%;
+	text-align: right;
+	margin-right: -100%;
+}
+
+
+.au_box{
+	width: 100%;
+	height: 95px;
+	border-bottom: 1px solid #000;
+	box-sizing: border-box;
+}
+.au_box_l{
+	float: left;
+	width: 50%;
+	height: 100%;
+	position: relative;
+}
+@keyframes arrow_down{  /*화살표 animation*/
+	0%{opacity: 0;}
+   	100%{opacity: 1}
+   	0%{opacity: 0;}
+}
+.arrows_down .arrow1{
+	display: block;
+	font-size: 50px;
+	font-size: 3.125rem;
+	position: absolute;
+	top: 18%;
+	left: 6%;
+	animation: arrow_down 1s infinite alternate;  /*0%->100%->0%*/
+	animation-delay: 1s;
+}
+.arrows_down .arrow2{
+	display: block;
+	font-size: 50px;
+	font-size: 3.125rem;
+	position: absolute;
+	top: 36%;
+	left: 6%;
+	animation: arrow_down 1s infinite alternate;
+	animation-delay: 1.5s;
+}
+.arrows_down .arrow3{
+	display: block;
+	font-size: 50px;
+	font-size: 3.125rem;
+	position: absolute;
+	top: 54%;
+	left: 6%;	
+	animation: arrow_down 1s infinite alternate;
+	animation-delay: 2s;
+}
+.au_box_r{
+	float: right;
+	width: 50%;
+	height: 100%;
+	background: yellow;
+	border-left: 1px solid #000;
+	box-sizing: border-box;
+}
+
+.videowrapper{
+	position: relative;
+	padding-bottom: 56.25%;
+	height: 0;
+}
+iframe{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-bottom: 1px solid #000;
+}
+
+.au_text{
+	width: 100%;
+	height: auto;
+	font-size: 13px;
+	font-size: 0.813rem;
+	text-align: center;
+	line-height: 25px;
+	padding: 10% 6%;
+	box-sizing: border-box;
+	background: #666;
+}
+.au_text .au_text_en{
+	font-size: 16px;
+	font-size: 1rem;
+	font-weight: bold;
+}
+
+
+/*///////// PUBLICATION INFO*/
+
+.au_info{
+	width: 100%;
+	height: 50px;
+	border: solid #000;
+	border-width: 1px 0;
+	background: #edecee;
+}
+dt{   /*탭제목*/
+	position: relative;
+	height: 50px;
+	line-height: 50px;
+	font-size: 18px;
+	font-size: 1.125rem;
+	font-weight: bold;
+	color: #000;
+	letter-spacing: 1px;
+	padding: 0 8%;
+	text-align: left;
+}
+dt .drop{
+	position: absolute;
+	right: 4%;
+	font-size: 45px;
+	font-size: 2.813rem;
+}
+
+dd p{
+	color: #666;
+	font-size: 12px;
+	font-size: 0.750rem;
+	line-height: 22px;
+	padding: 6% 8%;
+}
+
+p .au_name{
+    display: inline-block;
+    width: 24%;
+	color: #000;
+	font-weight: bold;
+}
+
+
+
+
+/* SUB2_our_story ----------------------------------------->>>>> */
+
+.os_title{
+	position: fixed;
+	height: 65px;
+	line-height: 45px;
+	background: #fff;
+	border-bottom: 1px solid #000;
+}
+.os{
+	position: relative;
+	width: 100%;
+	height: 1400px;
+	box-sizing: border-box;
+}
+.os2{height: 1250px;}
+.os3{height: 1220px;}
+.os_img{
+	width: 100%;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+    top: 64px;
+    transition: all 0.4s;
+}
+.os.osactive .os_img{
+    position: fixed;
+    top: 124px;
+}
+.os_img img{
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+.os_img .arrows_down{
+	position: absolute;
+	top: 42%;
+	width: 50%;
+	height: 95px;
+}
+.os_text{
+	position: absolute;
+	top: 350px;
+	left: 22%;
+	width: 78%;
+	height: auto;
+	background: #edecee;
+	border: 1px solid #000;
+	padding: 5%;
+	box-sizing: border-box;
+}
+.os_text p{
+	font-size: 12px;
+	font-size: 0.750rem;
+	line-height: 22px;
+}
+.os_text .os_text_en{
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: 600;
+}
+
+.os_last{
+	position: relative;
+	width: 100%;
+	height: 950px;
+	padding: 50% 12%;
+	margin-top: 20%;
+	box-sizing: border-box;
+}
+.os_last_in{
+	display: none;
+}
+.os_last_in span{
+	position: absolute;
+	font-size: 160px;
+	font-size: 10.000rem;
+	font-family: 'Montagu Slab', serif;
+}
+.os_last_in .f_text{
+	top: 6%;
+	left: 6%;
+}
+.os_last_in .b_text{
+	top: 80%;
+	right: 6%;
+}
+
+.os_last_in p{
+	font-size: 13px;
+	font-size: 0.813rem;
+	text-align: center;
+	line-height: 25px;
+}
+.os_last_in .os_last_en{
+	font-size: 15px;
+	font-size: 0.938rem;
+	font-weight: 600;
+}
+.os_last_in .os_last_note{
+	font-size: 15px;
+	font-size: 0.938rem;
+	font-weight: 600;
+}
+
+
+
+
+/* SUB3_stockists ----------------------------------------->>>>> */
+
+.st_title{
+	height: 65px;
+	line-height: 45px;
+	background: #fff;
+	border-bottom: 1px solid #000;
+}
+#st_tabmenu{
+	position: relative;
+	width: 100%;
+	height: auto;
+}
+.st_tab li{
+	width: 25%;
+	height: 50px;
+	float: left;
+	/* background: #000; */
+	color: #999;
+	font-size: 13px;
+	font-size: 0.813rem;
+	line-height: 50px;
+	text-align: center;
+	font-weight: bold;
+	border-bottom: 1px solid #000;
+	box-sizing: border-box;
+}
+.st_tab li.st_selected{
+	background: #edecee;
+	color: #000;
+	font-weight: 900;
+	border-bottom: 1px solid #edecee;
+	border-right: 1px solid #000;
+	border-left: 1px solid #000;
+}
+
+.st_panel{
+	clear: both;
+	width: 100%;
+	background: #edecee;
+	padding: 20px;
+	color: #666;
+	font-size: 12px;
+	font-size: 0.750rem;
+	line-height: 20px;
+	text-align: center;
+	border: solid #000;
+	border-width: 0 1px 1px 1px;
+	box-sizing: border-box;
+}
+.st_panel>li .st_box{margin-top: 40px;}
+.st_panel>li .st_last{margin-bottom: 40px;}
+
+.st_panel>li .st_box .country{
+	font-size: 15px;
+	font-size: 0.938rem;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 8px;
+}
+
+
+
+
+/* SUB4_contact ----------------------------------------->>>>> */
+
+.ct_title{
+	height: 95px;
+	line-height: 48px;
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+}
+.ct_contents{
+	width: 100%;
+	height: 600px;
+	padding: 20px;
+	background: #edecee;
+	color: #666;
+	font-size: 12px;
+	font-size: 0.750rem;
+	line-height: 20px;
+	text-align: center;
+	border: solid #000;
+	border-width: 0 1px 1px 1px;
+	box-sizing: border-box;
+}
+.ct_contents .ct_box{margin-top: 30px;}
+.ct_contents .ct_last{margin: 100px 0 30px 0;}
+
+.ct_contents .ct_box .ct_text{
+	font-size: 14px;
+	font-size: 0.875rem;
+	font-weight: bold;
+	color: #000;
+	margin-bottom: 8px;
+}
+
+
+
+
+/* SUB5_archive ----------------------------------------->>>>> */
+
+.ac_title{
+	height: 95px;
+	line-height: 48px;
+}
+.ac_title h3:last-child{
+	float: left;
+	width: 50%;
+	margin-left: -200%;
+}
+
+.ac_menu dt{
+	background: #edecee;
+	border: solid #000;
+	border-width: 1px 0;
+}
+.ac_menu dd{
+	position: absolute;
+	width: 100%;
+	display: none;
+	background: #edecee;
+	border-bottom: 1px solid #000;
+	padding: 4% 10%;
+	z-index: 500;
+}
+.ac_menu dd ul li{
+	height: 32px;
+	line-height: 32px;
+}
+.ac_menu dd ul li:hover{
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#ac_tabmenu{
+	width: 100%;
+	height: auto;
+	background: #999;
+}
+#ac_tabmenu .ac_panel{
+	width: 100%;
+	height: auto;
+}
+#ac_tabmenu .ac_panel:after{
+    content: "";
+    display: block;
+    padding-bottom: 420%;
+}
+
+.ac_panel>li{
+	width: 100%;
+	padding: 0 6%;
+	box-sizing: border-box;
+}
+
+.ac_panel>li ul li{
+	width: 47%;
+	box-sizing: border-box;
+	padding: 6% 0;
+	border-bottom: 1px solid #000;
+}
+.ac_panel>li ul li:nth-child(2n+1){
+	float: left;
+	margin-right: 3%;
+}
+.ac_panel>li ul li:nth-child(2n){
+	float: right;
+	margin-left: 3%;
+}
+.ac_panel>li ul li img{
+	width: 100%;
+	max-width:100%;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.ac_panel>li ul li .ac_text{
+	width: 100%;
+	line-height: 16px;
+	padding-top: 6%;
+}
+.ac_panel>li ul li .ac_text h3{
+	font-size: 11px;
+	font-size: 0.688rem;
+	font-weight: normal;
+	color: #333;
+}
+.ac_panel>li ul li .ac_text h4{
+	font-size: 14px;
+	font-size: 0.875rem;
+}
+.ac_panel>li ul li:hover{background: #000;}
+.ac_panel>li ul li:hover .ac_text h3{color: #fff;}
+.ac_panel>li ul li:hover .ac_text h4{color: #fff;}
+
+.tab{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+.tab ul{
+	position: absolute;
+	width: 180px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.tab ul li{
+	width: 30px;
+	float: left;
+	font-size: 16px;
+	font-size: 1rem;
+	color: #333;
+}
+.tab ul li.selected{font-weight: bold;}
+
+
+
+
+/* SUB6_story ----------------------------------------->>>>> */
+
+.sr_title{
+	height: 65px;
+	line-height: 48px;
+	border-bottom: none;
+}
+
+.sr{
+	width: 100%;
+	height: auto;
+	background: #999;
+}
+.sr_menu{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #edecee;
+	border: solid #000;
+	border-width: 1px 0;
+}
+.sr_menu ul{
+	position: absolute;
+	width: 284px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.sr_menu li{
+	float: left;
+	font-size: 13px;
+	font-size: 0.813rem;
+	color: #999;
+	font-weight: bold;
+	padding: 0 2.7%;
+	line-height: 49px;
+}
+.sr_menu li.sr_selected{color: #000;}
+
+
+.sr_tabmenu>li{
+	width: 100%;
+	height: auto;
+	background: #ccc;
+}
+.sr_tabmenu>li .sr_panel{
+	width: 100%;
+	height: auto;
+}
+.sr_tabmenu>li .sr_panel:after{
+    content: "";
+    display: block;
+    padding-bottom: 10%;
+}
+
+.sr_panel li{
+	position: relative;
+	width: 90%;
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 8% 0 6%;
+	border-bottom: 1px solid #000;
+	overflow: hidden;
+}
+
+.sr_panel li img{
+	width: 100%;
+	max-width:100%;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+.sr_panel li .sr_text{
+	position: absolute;
+	/* top: 30%;
+	left: 0%; */
+	bottom: -42%;
+	left: 22%;
+	width: 78%;
+	height: 70%;
+	line-height: 20px;
+	padding: 5% 5% 0;
+	background: #fff;
+	box-sizing: border-box;
+	transition: all 0.4s;
+	border: 1px solid #000;
+	box-sizing: border-box;
+}
+
+.sr_panel li .sr_text .sr_ttitle{
+	float: left;
+	font-size: 11px;
+	font-size: 0.688rem;
+	color: #999;
+	padding: 0 2%;
+	/* background: #999; */
+	transition: all 0.4s;
+}
+.sr_panel li .sr_text h3{
+	font-size: 11px;
+	font-size: 0.688rem;
+	font-weight: normal;
+	color: #333;
+	text-align: right;
+	padding-top: 1%;
+}
+.sr_panel li .sr_text h4{
+	font-size: 15px;
+	font-size: 0.938rem;
+	font-weight: 900;
+	text-align: right;
+}
+.sr_panel li .sr_text .sr_tline{
+	display: block;
+	width: 100%;
+	height: 1px;
+	background: #666;
+	margin-top: 18px;
+}
+.sr_panel li .sr_text p{
+	font-size: 12px;
+	font-size: 0.750rem;
+	color: #333;
+	text-align: center;
+	padding-top: 8%;
+	line-height: 20px;
+}
+
+.sr_panel li:hover img{filter: grayscale(0.7);}
+.sr_panel li:hover .sr_text{
+	bottom: -1px;
+	left: 0%;
+	width: 100%;
+}
+.sr_panel li:hover .sr_text .sr_ttitle{
+	color: #fff;
+	background: #999;
+}
+
+.sr_panel .btn{border: none;}
+.sr_panel .more{  /*더보기 버튼*/
+	width: 100%;
+	height: 40px;
+	line-height: 40px;
+	color: #fff;
+	font-size: 13px;
+	font-size: 0.813rem;
+	background: #000;
+	text-align: center;
+	cursor: pointer;
+}
+
+/*처음 5개를 제외한 모든 목록 안보이게 함.*/
+.sr_panel li:nth-child(n+12):nth-child(-n+34){display: none;}
+
+
+
+
+/* SUB7_shop ----------------------------------------->>>>> */
+
+.sh_title{
+	height: 65px;
+	line-height: 48px;
+	border-bottom: none;
+}
+
+.sh{
+	width: 100%;
+	height: auto;
+	background: #999;
+}
+.sh_menu{
+	position: relative;
+	width: 100%;
+	height: 50px;
+	background: #edecee;
+	border: solid #000;
+	border-width: 1px 0;
+}
+.sh_menu ul{
+	position: absolute;
+	width: 284px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.sh_menu li{
+	float: left;
+	font-size: 13px;
+	font-size: 0.813rem;
+	color: #999;
+	font-weight: bold;
+	padding: 0 2.7%;
+	line-height: 49px;
+}
+.sh_menu li.sh_selected{color: #000;}
+
+
+.sh_tabmenu>li{
+	width: 100%;
+	height: auto;
+	background: #ccc;
+}
+.sh_tabmenu>li .sh_panel{
+	width: 100%;
+	height: auto;
+}
+.sh_tabmenu>li .sh_panel:after{
+	content: "";
+	display: block;
+	padding-bottom: 460%;
+}
+
+#sh_tabmenu3 .sh_panel:after{
+	content: "";
+	display: block;
+	padding-bottom: 100%;
+}
+
+.sh_panel>li{
+	width: 100%;
+  height: auto;
+	padding: 0 6%;
+	box-sizing: border-box;
+}
+
+.sh_panel>li ul li{
+	width: 47%;
+  height: 320px;
+	box-sizing: border-box;
+	padding: 6% 0;
+	border-bottom: 1px solid #000;
+}
+.sh_panel>li ul li:nth-child(2n+1){
+	float: left;
+	margin-right: 3%;
+}
+.sh_panel>li ul li:nth-child(2n){
+	float: right;
+	margin-left: 3%;
+}
+
+.sh_panel>li ul li .sh_text{
+	width: 100%;
+	line-height: 16px;
+	padding: 8px 4px 0;
+  text-align: right;
+  box-sizing: border-box;
+}
+.sh_panel>li ul li .sh_text h3{
+  font-size: 14px;
+	font-size: 0.875rem;
+  line-height: 18px;
+}
+.sh_panel>li ul li .sh_text h4{
+  font-size: 13px;
+	font-size: 0.813rem;
+	font-weight: normal;
+	color: #333;
+  padding-top: 6px;
+}
+.sh_panel>li ul li:hover{background: #000;}
+.sh_panel>li ul li:hover .sh_text h3{color: #fff;}
+.sh_panel>li ul li:hover .sh_text h4{color: #fff;}
+
+.tab_sh{
+	position: relative;
+	width: 100%;
+	height: 80px;
+	text-align: center;
+}
+.tab_sh ul{
+	position: absolute;
+	width: 180px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.tab_sh ul li{
+	width: 30px;
+	float: left;
+	font-size: 16px;
+	font-size: 1rem;
+	color: #333;
+}
+.tab_sh ul li.tab_selected{font-weight: bold;}
+
+
+#sh_tabmenu4 .sh_panel{
+  text-align: center;
+  padding: 50px 6%;
+  box-sizing: border-box;
+}
+#sh_tabmenu4 .sh_panel:after{
+	content: "";
+	display: block;
+	padding-bottom: 0;
+}
+#sh_tabmenu4 .sh_panel h5{
+  font-size: 20px;
+  font-size: 1.250rem;
+  margin-bottom: 30px;
+}
+#sh_tabmenu4 .sh_panel .sr_last_image{
+  width: 150px;
+  height: 225px;
+  margin: 0 auto 30px;
+  background: url(../image/sh_14.png) no-repeat center center;
+  background-size: cover;
+}
+#sh_tabmenu4 .sh_panel p{
+  font-size: 14px;
+  font-size: 0.875rem;
+  color: #333;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+#sh_tabmenu4 .sh_panel .sr_last_btn li{
+  width: 100%;
+  height: 40px;
+  border: 1px solid #333;
+  color: #333;
+  line-height: 40px;
+  margin-top: 8px;
+  transition: all .6s;
+}
+#sh_tabmenu4 .sh_panel .sr_last_btn li:hover{
+  background: #000;
+  color: #fff;
+}
+
+
+/* SUB8_newsletter ----------------------------------------->>>>> */
+
+#nl{
+	background: #edecee;
+}
+.nl_title{
+	height: 95px;
+	line-height: 48px;
+}
+.nl_title h3:last-child{
+	text-align: right;
+	margin-right: -100%;
+	/* padding-right: 16%; */
+}
+
+.nl_contents{
+	width: 100%;
+	height: auto;
+	padding: 6%;
+	box-sizing: border-box;
+}
+.nl_img{
+	width: 100%;
+	max-width:100%;
+	height: auto;
+	padding: 10% 6%;
+	box-sizing: border-box;
+}
+.nl_text p{
+	color: #666;
+	font-size: 13px;
+	font-size: 0.813rem;
+	line-height: 23px;
+}
+.nl_text p:first-child{
+	color: #000;
+	font-size: 15px;
+	font-size: 0.938rem;
+	line-height: 25px;
+	text-align: center;
+}
+
+.nl_form{
+	padding: 20% 0;
+	text-align: center;
+}
+.nl_form .nl_name, .nl_form .nl_email{
+	width: 100%;
+	height: 40px;
+	display: block;
+	margin: 0 auto 10px;
+	text-align: center;
+}
+.nl_form .nl_label{
+	line-height: 20px;
+	color: #666;
+}
+.nl_form .nl_button{
+	width: 100%;
+	height: 40px;
+	margin: 15px auto 0;
+	background: #000;
+	border: none;
+	border-radius: 3px;
+	color: #fff;
+	transition: all .6s;
+}
+.nl_form .nl_button:hover{
+	color: #000;
+	background: #666;
+}
